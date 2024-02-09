@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -96,9 +97,25 @@ namespace GA_QueueDoubly_Ronda
 
             // return the value that was removed
             return temp;
+        } // Dequeue
+
+        // Returns the value of the front element without removing it
+        internal T Peek()
+        {
+            // If front is already null, return default
+            if (front == null) return default;
+
+            // return the value of the front element
+            return front.Value;
+        } // Peek
+
+        // empties the queue
+        internal void Clear()
+        {
+            front = null;
+            rear = null;
+            count = 0;
         }
-
-
 
     } // class Queue
 }

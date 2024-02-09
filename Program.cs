@@ -7,6 +7,11 @@
     {
         static void Main(string[] args)
         {
+            StringTest();
+        }
+
+        public static void StringTest()
+        {
             // test string queue
             Queue<string> stringQueue = new Queue<string>();
 
@@ -16,9 +21,26 @@
             stringQueue.Enqueue("Cherry");
             stringQueue.Enqueue("Dragonfruit");
 
-            // test dequeue
-            Console.Write(stringQueue.Dequeue());
+            // test count
+            Console.WriteLine(stringQueue.Count); // 4
 
+            // test dequeue
+            Console.WriteLine(stringQueue.Dequeue()); // Apple
+
+            // test peek
+            Console.WriteLine(stringQueue.Peek()); // Banana
+
+            // test clear
+            stringQueue.Clear();
+
+            // test dequeue
+            Console.WriteLine(stringQueue.Dequeue()); // empty
+
+            // test peek
+            Console.WriteLine(stringQueue.Peek()); // empty
+
+            // test count
+            Console.WriteLine(stringQueue.Count); // 0
         }
     }
 }
