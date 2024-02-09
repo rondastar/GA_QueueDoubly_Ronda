@@ -7,7 +7,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // test string queue
+            Queue<string> stringQueue = new Queue<string>();
+
+            // test enqueue
+            stringQueue.Enqueue("Apple");
+            stringQueue.Enqueue("Banana");
+            stringQueue.Enqueue("Cherry");
+            stringQueue.Enqueue("Dragonfruit");
+
+            // test dequeue
+            Console.Write(stringQueue.Dequeue());
+
         }
     }
 }
