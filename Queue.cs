@@ -20,14 +20,14 @@ namespace GA_QueueDoubly_Ronda
             front = null;
             rear = null;
             count = 0;
-        }
+        } // Queue constructor
 
 
         // Public property to access the count of elements.
         public int Count
         {
             get { return count; }
-        }
+        } // Count
 
         // Nested class QueueNode representing elements in the queue
         internal class QueueNode<T>
@@ -42,7 +42,7 @@ namespace GA_QueueDoubly_Ronda
                 Value = value;
                 Next = null;
                 Previous = null;
-            }
+            } // QueueNode constructor
 
         } // class QueueNode
 
@@ -68,7 +68,7 @@ namespace GA_QueueDoubly_Ronda
 
             // increment the count
             count++;
-        }
+        } // Enqueue
 
         // Remove the element at the front and return its value
         internal T Dequeue()
@@ -115,7 +115,7 @@ namespace GA_QueueDoubly_Ronda
             front = null;
             rear = null;
             count = 0;
-        }
+        } // Clear
 
     } // class Queue
 }
