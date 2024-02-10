@@ -46,7 +46,7 @@
 
         public static void IntTest()
         {
-            // test string queue
+            // test int queue
             Queue<int> intQueue = new Queue<int>();
 
             // test enqueue
